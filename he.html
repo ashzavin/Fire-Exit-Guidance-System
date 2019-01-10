@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fire Exit Guidance</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+<style>
+#paper{ 
+
+background:#FFF; 
+border:#ffffff 1px solid; 
+margin-left:140px;
+
+
+}
+
+</style>
+
+
+
+<script>
+window.onload = function()
+{
+	var canvas=document.getElementById("paper"),
+	c=canvas.getContext("2d");
+	
+	c.fillStyle="black";
+	c.fillRect(0,0,canvas.width, canvas.height);
+	
+	/*c.fillStyle="red";
+	c.fillRect(20,20,50,50);
+	
+	c.strokeStyle="white";
+	//c.lineWidth= 10;
+	c.strokeRect(20,20,50,50);
+	c.clearRect(20,20,20,20);
+	
+	c.strokeStyle="#0489B1";
+	c.lineWidth="5";
+	
+	c.beginPath();
+	c.moveTo(100,100);
+	c.lineTo(-1000,100);
+	c.stroke();*/
+	
+	
+	c.lineWidth="3"; 
+    c.fillStyle = '#DF3A01';
+    c.fillRect(80, 80, 80, 80);
+	c.strokeStyle="#F5F6CE";
+	c.strokeRect (80, 80, 80, 80);
+	c.fillRect(100, 100, 40, 62);
+	
+	
+	c.fillRect(160, 80, 80, 80);
+	c.strokeStyle="#F5F6CE";
+	c.strokeRect (160, 80, 80, 80);
+	c.fillRect(180, 100, 40, 62);
+	
+	
+    c.fillRect(240, 80, 80, 80);
+	c.strokeStyle="#F5F6CE";
+	c.strokeRect (240, 80, 80, 80);
+	c.fillRect(260, 100, 40, 62);
+	
+	
+	
+	c.strokeStyle="#0489B1";
+	c.lineWidth="5";
+	c.fillStyle="#81BEF7";
+	
+	c.beginPath();
+	c.moveTo(78,162);
+	c.lineTo(322,162);
+	c.lineTo(322,213);
+	c.lineTo(180,213);
+	c.lineTo(180,250);
+	c.lineTo(400,250);
+	c.lineTo(400,290);
+	c.lineTo(650,290);
+	c.lineTo(650,340);
+	c.lineTo(620,340);
+	c.lineTo(620,370);
+	c.lineTo(750,370);
+	c.lineTo(750,252);//building
+	c.lineTo(800,252);
+	c.lineTo(800,430);
+	c.lineTo(750,430);
+	c.lineTo(750,405);
+	c.lineTo(725,405);
+	c.lineTo(725,520);
+	c.lineTo(500,520);
+	c.lineTo(500,470);
+	c.lineTo(470,470);
+	c.lineTo(470,560);
+	c.lineTo(430,560);
+	c.lineTo(430,340);
+	c.lineTo(400,340);
+	c.lineTo(400,380);
+	
+	c.lineTo(170,380);
+	c.lineTo(170,340);
+	c.lineTo(150,340);
+	c.lineTo(150,410);
+	c.lineTo(110,410);
+	c.lineTo(110,250);
+	c.lineTo(140,250);
+	c.lineTo(140,210);
+	c.lineTo(78,210);
+	c.closePath();
+	c.fill();
+	//c.stroke();
+	
+	
+	c.fillStyle="black";
+	
+	
+	c.beginPath();
+	c.moveTo(210,280);
+	c.lineTo(355,280);
+	c.lineTo(355,340);
+	c.lineTo(210,340);
+	c.closePath();
+	c.fill();
+	//c.stroke();
+	
+	
+	
+	c.beginPath();
+	c.moveTo(470,340);
+	c.lineTo(590,340);
+	
+	c.lineTo(590,440);
+	c.lineTo(470,440);
+	c.closePath();
+	c.fill();
+	
+	//c.stroke();
+	
+	
+	c.beginPath();
+	c.moveTo(535,405);
+	c.lineTo(690,405);
+	c.lineTo(690,485);
+	c.lineTo(535,485);
+	c.closePath();
+	c.fill();
+	
+	
+	c.lineWidth="3"; 
+    c.fillStyle = '#DF3A01';
+    c.fillRect(40, 252, 70, 80);
+	c.strokeStyle="#F5F6CE";
+	c.strokeRect (40, 252, 70, 80);
+	c.fillRect(60, 280, 52, 40);
+	
+	
+	c.fillRect(40, 332, 70, 76);
+	c.strokeStyle="#F5F6CE";
+	c.strokeRect (40, 332, 70, 76);
+	c.fillRect(60, 350, 52, 40);
+	
+	
+	c.fillRect(430, 218, 90, 70);
+	c.strokeStyle="#F5F6CE";
+	c.strokeRect (430, 218, 90, 70);
+	c.fillRect(450, 250, 45, 41);
+	
+	
+	c.fillRect(800,253, 80, 90);
+	c.strokeStyle="#F5F6CE";
+	c.strokeRect (800,253, 80, 90);
+	c.fillRect(798, 280, 45, 41);
+	
+	c.fillRect(800,343, 80, 85);
+	c.strokeStyle="#F5F6CE";
+	c.strokeRect (800,343, 80, 85);
+	c.fillRect(798, 370, 45, 41);
+	
+	
+	
+	c.beginPath();
+	c.moveTo(469,560);
+	c.lineTo(580,670);
+	c.lineTo(580,670);
+	c.lineTo(565,685);
+	c.lineTo(450,560);
+	
+	c.lineTo(440,685);
+	c.lineTo(420,680);
+	c.lineTo(430,560);
+	//c.strokeStyle="#81F781";
+	c.fillStyle="#81F781";
+	c.fill();
+	//c.stroke();
+	
+	
+	c.beginPath();
+	c.fillStyle="#81BEF7";
+	c.moveTo(880,280);
+	c.lineTo(1000,280);
+	c.lineTo(1000,600);
+	c.lineTo(740,600);
+	c.lineTo(740,620);
+	c.lineTo(720,620);
+	c.lineTo(720,580);
+	c.lineTo(975,580);
+	c.lineTo(975,305);
+	c.lineTo(880,305);
+	c.fill();
+    //c.stroke();
+	
+	c.beginPath();
+	c.fillStyle="#81F781";
+	c.moveTo(720,620);
+	c.lineTo(550,750);
+	c.lineTo(560,770);
+	c.lineTo(740,620);
+	c.fill();
+	//c.stroke();
+	
+	
+	c.beginPath();
+	c.fillStyle="#81F781";
+	c.moveTo(540,660);
+	c.lineTo(600,720);
+	c.lineTo(620,700);
+	c.lineTo(570,660);
+	c.fill();
+	
+	
+	
+};
+
+
+
+</script>
+</head>
+
+<body>
+
+<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo" style="margin-top:20px; color:white; font-size:20px; font-weight:bold;"><img src="" alt="">FIRE EXIT GUIDANCE SYSTEM</a>
+				<ul id="navigation">
+					<li class="selected">
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="#aboutus">About</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+					
+					<li>
+						<a href="he.html">Design Simulation</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+<canvas id="paper" width="1100" height="800"></canvas>
+
+
+		<div id="footer">
+			<div class="connect" id="contact">
+				<div>
+					<h1>FOLLOW OUR  PROJECTS ON</h1>
+					<div>
+						<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>
+						<a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a>
+						<a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+						<a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>
+					</div>
+				</div>
+			</div>
+			<div class="footnote">
+				<div>
+					<p>&copy; 2017 BY AI GROUP-01 | ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+
+</html>
